@@ -1,0 +1,33 @@
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker ps -as
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                       PORTS     NAMES                   SIZE
+8a5b4b910284   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 2 minutes ago               nervous_morse           1.09kB (virtual 142MB)
+ceebadc36903   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes                 80/tcp    tender_elbakyan         1.09kB (virtual 142MB)
+80a27efdf21e   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 2 minutes ago               loving_knuth            1.09kB (virtual 142MB)
+
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker images
+REPOSITORY                                   TAG       IMAGE ID       CREATED        SIZE
+nginx                                        latest    f2f70adc5d89   43 hours ago   142MB
+
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker stop cee
+cee
+
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker container prune
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker image prune
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker images
+REPOSITORY                                   TAG       IMAGE ID       CREATED        SIZE
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+

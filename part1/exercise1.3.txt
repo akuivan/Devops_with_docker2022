@@ -1,0 +1,13 @@
+docker run -d devopsdockeruh/simple-web-service:ubuntu
+
+C:\Users\heank\devops>docker ps
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED          STATUS          PORTS     NAMES
+6e1e07d22c12   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   32 seconds ago   Up 30 seconds             competent_cori
+
+C:\Users\heank\devops>docker exec -it 6e bash
+root@6e1e07d22c12:/usr/src/app# tail -f ./text.log
+2022-03-19 13:35:12 +0000 UTC
+2022-03-19 13:35:14 +0000 UTC
+2022-03-19 13:35:16 +0000 UTC
+2022-03-19 13:35:18 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'

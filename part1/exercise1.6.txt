@@ -1,0 +1,9 @@
+docker run -it devopsdockeruh/pull_exercise
+
+(some seaching in Dockerhub, using Chrome)
+(found the password)
+(applied the password)
+
+
+You found the correct password. Secret message is:
+"This is the secret message"

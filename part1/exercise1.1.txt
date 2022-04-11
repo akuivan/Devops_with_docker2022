@@ -1,0 +1,30 @@
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker run -d nginx
+80a27efdf21e2c6c82618beb0354d7b1b63a8ff9498381af508e2e5ffd98dd72
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker run -d nginx
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)6fb121a471bf5
+$ docker run -d nginx
+8a5b4b91028438b6fbf8f2a3f184098399ccef21ceec2de6ee9a24a7efaf84e8
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+8a5b4b910284   nginx     "/docker-entrypoint.…"   4 seconds ago    Up 3 seconds    80/tcp    nervous_morse
+ceebadc36903   nginx     "/docker-entrypoint.…"   8 seconds ago    Up 6 seconds    80/tcp    tender_elbakyan
+80a27efdf21e   nginx     "/docker-entrypoint.…"   12 seconds ago   Up 11 seconds   80/tcp    loving_knuth
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker stop 8a 80
+8a
+80
+
+heank@DESKTOP-6H14O94 MINGW64 ~/devops/part1 (main)
+$ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+ceebadc36903   nginx     "/docker-entrypoint.…"   25 seconds ago   Up 23 seconds   80/tcp    tender_elbakyan
+

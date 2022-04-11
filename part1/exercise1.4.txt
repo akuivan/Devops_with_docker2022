@@ -1,0 +1,18 @@
+docker run -d -it --name looper ubuntu sh -c "while true; do date; sleep 1; done"
+
+docker exec -it looper bash
+apt upgrade
+apt update
+apt install curl
+
+root@783a205bc2ec:/# curl helsinki.fi
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+root@783a205bc2ec:/#
+
+
