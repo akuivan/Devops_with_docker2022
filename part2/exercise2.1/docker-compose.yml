@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+
+    simple-web-service:
+        image: devopsdockeruh/simple-web-service
+        build: .
+        volumes:
+          - .:/usr/src/app/text.log devopsdockeruh/simple-web-service
+        container_name: exercise2.l  

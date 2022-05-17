@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+    simple-web-service:
+        image: devopsdockeruh/simple-web-service
+        build: .
+        command: server
+        ports:
+            - 1270.0.1:8080:8080
+        container_name: exercise2.2 
