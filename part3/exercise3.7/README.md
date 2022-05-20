@@ -4,12 +4,10 @@ Dockerfile from "standalone" exercise 2.7 (kurkkumopo's frontend) was used for t
 
 ### Documented image sizes
 
-before:
-
-REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE
+before: <br>
+REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE <br>
 frontend                    latest    95d2ce0ed780   14 seconds ago   1.1GB
 
-after:
-
-REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE
+after: <br>
+REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE <br>
 frontend                    latest    ba332059f210   7 minutes ago    366MB
